@@ -7,8 +7,8 @@ function Main(){
         <div className="details">
             <h1>Hy Iam</h1>
             <p>Aditiya Singh</p>
-            <div  className=" mt-3 text-gray-600 w-96">
-                Full stack Web devloper with high skills and project delevier experience in many project of company
+            <div  className="detail mt-3 text-gray-600 w-96 max-md:w-72 ">
+                <div> Fullstack Web devloper with high skills and project delevier experience in many project of company</div>
                 <button>More</button>
             </div>
         </div>

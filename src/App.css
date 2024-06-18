@@ -157,11 +157,21 @@ color: orange;
     padding:  5px 10px 5px 10px;
 
   }
+  .details>h1{
+    font-size: 30px;
+  }
+  .details>p{
+    font-size: 20px;
+
+  }
+  .detail{
+    width: 250px;
+  }
 
 }
 @media(max-width: 468px){
   .navbar-item{
-    margin-right: 3%;
+    margin-right: 0%;
  
    }
    .form-check{
@@ -169,13 +179,17 @@ color: orange;
    }
    .navbar-item>ul>li{
      margin-left: 15px;
-     font-size: 14px;
+     font-size: 16px;
    }
    .btn{
-     font-size: 14px;
-     margin-left: 70%;
-     padding:  5px 10px 5px 10px;
+     font-size: 12px;
+     margin-left: 60%;
+     
+     padding:  5px 6px 5px 6px;
  
+   }
+   .icon{
+    margin-left: 5%;
    }
 
 }

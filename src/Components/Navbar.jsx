@@ -4,7 +4,7 @@ function Navbar(){
     return(
         <>
         <div className='navbar flex items-center'>
-            <a className='text-xl text-blue-500 font-bold ml-24 logo border w-fit max-md:ml-9 max-sm:ml-6' href = "#">Portfolio</a>
+            <a className='text-xl text-blue-500 font-bold ml-24 logo border w-fit max-md:ml-9 max-sm:ml-6 max-sm:text-sm' href = "#">Portfolio</a>
             <div class="form-check form-switch border">
   <input className="form-check-input taxt-2xl" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
              </div>
