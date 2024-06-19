@@ -112,6 +112,9 @@ color: orange;
   height:  200px;
   width:  200px;
   box-shadow: 0px 0px 10px orange;
+ 
+  backdrop-filter: blur(100px);
+ 
 }
 .image>img{
   width: 200px;
@@ -177,6 +180,8 @@ color: orange;
     height:  100px;
     width:  100px;
     box-shadow: 0px 0px 10px orange;
+   
+   
  
   }
   .image>img{
@@ -189,6 +194,7 @@ color: orange;
     margin-left: 30px;
     margin-top: 30px;
   }
+ 
 
 }
 @media(max-width: 468px){
@@ -215,6 +221,194 @@ color: orange;
    }
    
 
+}
+.maincontainer{
+  height: 100vw;
+  
+}
+.skills{
+  max-width: 1000px;
+ 
+  margin-left: 10%;
+  margin-top: 100px;
+}
+.skill>h1{
+  font-size: 30px;
+  font-family: 'Courier New', Courier, monospace;
+  color: #fb982f;
+  font-weight: bold;
+
+}
+.skill>p{
+  margin-top: 30px;
+  width: 200px;
+  color: grey;
+}
+.skill-role{
+  
+  margin-left: 60%;
+}
+.skill-role>.bg1{
+  
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  background-color: blue;
+ 
+}
+.skill-role>.bg2{
+ 
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  margin-top: 100px;
+  background-color: #fdc50f;
+  
+
+
+}
+.bg3{
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  z-index: 999;
+  margin-left: 150px;
+  background-color: white;
+  box-shadow: 0px 0px 20px grey;
+  animation: rotate 5s infinite;
+  
+  
+  
+  
+}
+.bg3>div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  box-shadow: 0px 0px 10px grey;
+
+  position: absolute;
+}
+.bg3>.skill1{
+  margin-left: 100px;
+  color: #fb982f;
+  font-size: 50px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+  
+ 
+
+}
+.bg3>.skill2{
+  margin-top: 100px;
+  margin-right: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: purple;
+  font-size: 50px;
+}
+.bg3>.skill3{
+  margin-top: 200px;
+  margin-left: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  color: green;
+}
+.bg3>.skill4{
+  margin-left: 200px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  color: rgb(52, 235, 52);
+}
+.bg3>.skill5{
+  margin-left: 100px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:  blue;
+  font-size: 50px;
+}
+
+@media(max-width: 768px){
+  .skills{
+    margin-left: 0%;
+   
+  }
+  .bg3{
+    margin-left: 50px;
+    height: 200px;
+    width: 200px;
+    margin-top: 30px;
+    
+  }
+  .skill-role>.bg1{
+    height: 100px;
+    width: 100px;
+    margin-left: 170px;
+    margin-top: 30px;
+  }
+  .skill-role>.bg2{
+    height: 100px;
+    width: 100px;
+    margin-left: 170px;
+    margin-top: 120px;
+
+  }
+  .bg3>div{
+    height: 65px;
+    width: 65px;
+  }
+  .bg3>.skill1{
+    margin-left: 70px;
+    font-size: 30px;
+  }
+  .bg3>.skill2{
+    margin-top: 70px;
+    font-size: 30px;
+  }
+  .bg3>.skill3{
+    margin-top: 136px;
+    margin-left: 70px;
+    font-size: 30px;
+  }
+  .bg3>.skill4{
+    margin-left:136px;
+    margin-top: 70px;
+    font-size: 30px;
+  }
+  .bg3>.skill5{
+    margin-top: 70px;
+    margin-left: 70px;
+    font-size: 30px;
+  }
+  .skill1{
+   
+    width: fit-content;
+    height: fit-content;
+    
+  }
+  
+  
+}
+.bg3{
+  animation: rotate 4s  infinite;
+}
+
+@keyframes rotate{
+  
+  100%{
+    transform: rotate(360deg);
+  }
 }
 
 

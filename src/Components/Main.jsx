@@ -1,8 +1,11 @@
 import bg1 from '../images/bg1.png'
-function Main(){
+function Main({profile1}){
+    
     return(
+      
         <>
-        <div className="main-container">
+       
+        <div className="main-container ">
         <div className='flex'>
         <div className="details">
             <h1>Hy Iam</h1>
@@ -12,7 +15,7 @@ function Main(){
           
             
             <div  className="detail mt-3 text-gray-600 w-96 max-md:w-72 ">
-                <div> Fullstack Web devloper with high skills and project delevier experience in many project of company</div>
+                <div style={{color: profile1 == 'white'?'grey':'white'}} > Fullstack Web devloper with high skills and project delevier experience in many project of company</div>
                 <button>More</button>
             </div>
         </div>
@@ -46,9 +49,62 @@ function Main(){
 
 
         </div>
+        <div className='row skills'>
+        <div className = "col-md skill">
+        <h1>Technicals Skills</h1>
+        <p>I Have Web development technologies with HTML, Javascript, CSS, PHP, Node.js, React, Mongo, Java, C/C++,DSA
+        </p>
+
+        </div>
+        <div className='col-md skill1'>
+        <div className='rounded-circle bg3 '>
+        <div className='rounded-circle skill1'>
+        <i class="fa-brands fa-html5"></i>
+
+        </div>
+        <div className='rounded-circle skill2'>
+        <i class="fa-brands fa-php"></i>
+
+         </div>
+         <div className='rounded-circle skill3'>
+         <i class="fa-brands fa-react"></i>
+
+        </div>
+         <div className='rounded-circle skill4'>
+         <i class="fa-brands fa-node"></i>
+
+         </div>
+         <div className='rounded-circle skill5'>
+         <i class="fa-brands fa-js"></i>
+
+         </div>
+
+
+    
+
+        </div>
+        <div className='skill-role w-fit h-fit'>
+       
+        <div className='rounded-circle bg1'>
+        
+         </div>
+        <div className='rounded-circle bg2'>
+
+        </div> 
+        
+        </div>
+       
+
+      </div>
+        </div>
        
         </div>
+
+    
      
+
+      
+        
        </>
     )
 
