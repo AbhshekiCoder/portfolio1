@@ -25,6 +25,16 @@
         AOS.init({
           duration: 1000
         });
+        let mode = localStorage.getItem("mode1");
+        if(mode == "black"){
+          document.getElementById("root").style.backgroundColor = "black";
+          document.getElementById("root").style.color = "orange";
+        }
+        else{
+          document.getElementById("root").style.backgroundColor = "white";
+          document.getElementById("root").style.color = "orange";
+
+        }
       </script>
   </body>
 

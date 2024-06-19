@@ -15,7 +15,7 @@ function Main({profile1}){
           
             
             <div  className="detail mt-3 text-gray-600 w-96 max-md:w-72 ">
-                <div style={{color: profile1 == 'white'?'grey':'white'}} > Fullstack Web devloper with high skills and project delevier experience in many project of company</div>
+                <div style ={{color: profile1 == 'white'?'grey':'white'}} > Fullstack Web devloper with high skills and project delevier experience in many project of company</div>
                 <button>More</button>
             </div>
         </div>
