@@ -5,7 +5,7 @@ function Main({profile1}){
       
         <>
        
-        <div className="main-container ">
+        <div className="main-container " style={{backgroundColor: profile1 == 'white'?'white':'black', color: profile1 == 'white'?'black':'white'}}>
         <div className='flex'>
         <div className="details">
             <h1>Hy Iam</h1>
@@ -26,7 +26,7 @@ function Main({profile1}){
             
 
         </div>
-        <div className='icon flex'>
+        <div className='icon flex' >
         <div data-aos = "fade-down" className='rounded-circle' >
         <i className="fa-brands fa-github text-4xl text-orange-400 rounded-circle "></i>
         </div>
@@ -49,7 +49,7 @@ function Main({profile1}){
 
 
         </div>
-        <div className='row skills'>
+        <div className='row skills' >
         <div className = "col-md skill">
         <h1>Technicals Skills</h1>
         <p>I Have Web development technologies with HTML, Javascript, CSS, PHP, Node.js, React, Mongo, Java, C/C++,DSA
@@ -97,6 +97,26 @@ function Main({profile1}){
 
       </div>
         </div>
+
+        <div className='services  row' style={{backgroundColor: profile1 == 'white'?'white':'black', color: profile1 == 'white'?'black':'white'}}>
+        <div className = "col-md">
+        <h1>My Awesome </h1>
+        <p>Services</p>
+        <p1>we provided related to web development, Backend, Fullstack, UI/UX design, editing,
+        seo</p1>
+        <div>
+        <button className='rounded-sm bg-orange-400 text-white w-40'>Download CV</button>
+
+        </div>
+       
+
+        </div>
+        <div className = "col-md">
+            
+        </div>
+        
+        </div>
+
        
         </div>
 

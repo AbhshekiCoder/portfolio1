@@ -35,7 +35,7 @@ function App() {
 
   return (
     <>
-    <div className= '  maincontainer' style={{backgroundColor: toggle == 'white'?'white':'black', color: toggle == 'white'?'black':'white'}}>
+    <div className= '  maincontainer h-full'>
    
     <Navbar profile1={toggle} mode={mode}/>
     <Main profile1 = {toggle}/>

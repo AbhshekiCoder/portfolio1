@@ -338,6 +338,31 @@ color: orange;
   color:  blue;
   font-size: 50px;
 }
+.services{
+  max-width: 1000px;
+  margin-left: 10%;
+  margin-top: 200px;
+}
+.services>.col-md>h1{
+  font-size: 30px;
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 10px;
+
+}
+.services>.col-md>p{
+  font-size: 30px;
+  font-family: 'Courier New', Courier, monospace;
+  color: #fb982f;
+  margin-top: 10px;
+
+}
+.services>.col-md>div>button{
+  padding:  5px 10px 5px 10px;
+  background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%);
+  box-shadow: 0px 10px 20px 3px rgba(251, 161, 40, 0.42);
+  margin-top: 20px;
+  border-radius: 20px 20px;
+}
 
 @media(max-width: 768px){
   .skills{
@@ -395,8 +420,15 @@ color: orange;
    
     width: fit-content;
     height: fit-content;
-    
+   
   }
+  .services{
+    margin-left: 0%;
+    width: 100%;
+    margin-top: 250px;
+   
+  }
+  
   
   
 }
@@ -409,7 +441,9 @@ color: orange;
   100%{
     transform: rotate(360deg);
   }
+  
 }
+
 
 
 
