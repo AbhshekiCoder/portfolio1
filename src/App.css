@@ -483,10 +483,17 @@ color: orange;
 
 }
 .swiper1{
+  display: none;
+  max-width: 800px;
+  margin-top: 30px;
+  
+ 
+}
+.swiper2{
   max-width: 800px;
   margin-top: 30px;
   display: none;
- 
+
 }
 
 @media(max-width: 768px){
