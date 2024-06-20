@@ -5,6 +5,7 @@ import 'swiper/swiper-bundle.css';
 import 'swiper/css/pagination';
 import {Navigation, Pagination, Scrollbar} from 'swiper/modules';
 function Main({profile1}){
+    console.log(profile1);
     
     return(
       
@@ -54,7 +55,7 @@ function Main({profile1}){
 
 
         </div>
-        <div className='row skills' >
+        <div className='row skills'  id = "skills">
         <div className = "col-md skill">
         <h1>Technicals Skills</h1>
         <p>I Have Web development technologies with HTML, Javascript, CSS, PHP, Node.js, React, Mongo, Java, C/C++,DSA
@@ -159,7 +160,7 @@ function Main({profile1}){
             
         </div>
 
-        <div className='projects'>
+        <div className='projects' id = "projects">
         <h1>My Projects</h1>
         <div className=' max-md:hidden slide1'>
         <Swiper className='swiper max-md:hidden' pagination = {{clickable: true}} modules={[Pagination,Navigation]} slidesPerView={3} spaceBetween={30} >
@@ -180,7 +181,7 @@ function Main({profile1}){
        
        
         <div className='hidden swiper1'>
-        <Swiper className='swiper hidden max-md:block ' pagination = {{clickable: true}} modules={[Pagination,Navigation]} slidesPerView={1} spaceBetween={30} >
+        <Swiper className='swiper2 hidden max-md:block ' pagination = {{clickable: true}} modules={[Pagination,Navigation]} slidesPerView={1} spaceBetween={30} >
             <SwiperSlide className='swiper-slide'><img src = {bg1} className=''/></SwiperSlide>
             <SwiperSlide className='swiper-slide '><img src = {bg1} className=''/></SwiperSlide>
             <SwiperSlide className='swiper-slide'><img src = {bg1} className=''/></SwiperSlide>

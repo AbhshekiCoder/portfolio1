@@ -495,6 +495,34 @@ color: orange;
   display: none;
 
 }
+.about{
+  max-width: 800px;
+  margin: auto;
+  margin-top: 100px;
+}
+.about1{
+  border: solid 2px orange;
+  padding: 10px;
+  border-radius: 20px 20px;
+  
+}
+.about1>h1{
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  color: #fdc50f;
+  font-weight: bold;
+
+
+}
+.About{
+  height: fit-content;
+}
+.about1>div{
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+  }
 
 @media(max-width: 768px){
   .skills{

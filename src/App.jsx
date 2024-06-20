@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import Navbar from './Components/Navbar'
 import Main from './Components/Main'
 import './App.css'
+import {Route, Router, Routes} from 'react-router-dom';
+import About from './Components/About';
 
 function App() {
   const [toggle, setToggle] = useState("white");
@@ -36,9 +38,16 @@ function App() {
   return (
     <>
     <div className= '  maincontainer h-full'  style={{backgroundColor: toggle == 'white'?'white':'black', color: toggle == 'white'?'black':'white'}}>
-   
+
     <Navbar profile1={toggle} mode={mode}/>
-    <Main profile1 = {toggle}/>
+    <Routes>
+      <Route path ='/' element = {<Main profile1 = {toggle}/>}></Route>
+      <Route path ='/About' element = {<About profile1={toggle}/>} ></Route>
+    </Routes>
+
+   
+   
+    
 
     </div>
     
