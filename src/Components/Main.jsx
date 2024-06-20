@@ -180,7 +180,7 @@ function Main({profile1}){
        
        
         <div className='hidden swiper1'>
-        <Swiper className='swiper ' pagination = {{clickable: true}} modules={[Pagination,Navigation]} slidesPerView={1} spaceBetween={30} >
+        <Swiper className='swiper hidden max-md:block ' pagination = {{clickable: true}} modules={[Pagination,Navigation]} slidesPerView={1} spaceBetween={30} >
             <SwiperSlide className='swiper-slide'><img src = {bg1} className=''/></SwiperSlide>
             <SwiperSlide className='swiper-slide '><img src = {bg1} className=''/></SwiperSlide>
             <SwiperSlide className='swiper-slide'><img src = {bg1} className=''/></SwiperSlide>
