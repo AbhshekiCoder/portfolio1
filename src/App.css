@@ -347,6 +347,7 @@ color: orange;
   font-size: 30px;
   font-family: 'Courier New', Courier, monospace;
   margin-top: 10px;
+  font-weight: bold
 
 }
 .services>.col-md>p{
@@ -354,6 +355,7 @@ color: orange;
   font-family: 'Courier New', Courier, monospace;
   color: #fb982f;
   margin-top: 10px;
+  font-weight: bold;
 
 }
 .services>.col-md>div>button{
@@ -362,6 +364,129 @@ color: orange;
   box-shadow: 0px 10px 20px 3px rgba(251, 161, 40, 0.42);
   margin-top: 20px;
   border-radius: 20px 20px;
+}
+.card{
+  display: grid;
+  justify-content: end;
+  border: none;
+}
+.card1{
+  height: 200px;
+  width: 200px;
+  border: solid 3px orange;
+  border-radius: 20px 20px;
+  margin-left: 50px;
+  padding: 10px;
+  animation: slideright 2s  ease forwards;
+  
+}
+@keyframes slideright{
+  0%{
+    transform: translateX(-100px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}
+.card2{
+  height: 200px;
+  width: 200px;
+  border: solid 3px orange;
+  margin-top: 40px;
+  border-radius: 20px 20px;
+  padding: 10px;
+  animation: slideleft 2s  ease forwards;
+  
+ 
+}
+@keyframes slideleft{
+  0%{
+    transform: translateX(100px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}
+.card1>div>i{
+  font-size: 50px;
+}
+.card2>div>i{
+  font-size: 50px;
+}
+.card3{
+  height: 200px;
+  width: 200px;
+  border: solid 3px orange;
+  margin-top: 150px;
+  border-radius: 20px 20px;
+  padding: 10px;
+  animation: slidedown 2s  ease forwards;
+  
+  
+  
+ 
+}
+@keyframes slidedown{
+  0%{
+    transform: translateY(-100px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+.card3>div>i{
+  font-size: 50px;
+}
+.card3>div>i{
+  font-size: 50px;
+}
+.projects{
+  max-width: 800px;
+  margin: auto;
+  margin-top: 50px;
+}
+.projects>h1{
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  color: #fdc50f;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+.swiper{
+  max-width: 800px;
+  margin-top: 30px;
+ 
+}
+.swiper-slide{
+  width: 400px;
+  height: 200px;
+}
+.swiper-slide>img{
+  width: 400px;
+  object-fit: cover;
+  height: 200px;
+  border-radius: 20px 20px;
+}
+.projects>div{
+  display: flex;
+  justify-content: center;
+}
+.projects>div>button{
+  border-radius: 20px 20px;
+  font-size: 16px;
+  padding:  10px 20px 10px 20px;
+  background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%);
+  box-shadow: 0px 20px 24px 3px rgba(251, 161, 40, 0.42);
+  color: white;
+  margin-top: 20px;
+
+}
+.swiper1{
+  max-width: 800px;
+  margin-top: 30px;
+  display: none;
+ 
 }
 
 @media(max-width: 768px){
@@ -426,8 +551,64 @@ color: orange;
     margin-left: 0%;
     width: 100%;
     margin-top: 250px;
-   
+  
   }
+  .card1{
+    height: 200px;
+    width: 150px;
+    border: solid 3px orange;
+    border-radius: 20px 20px;
+    margin-left: 50px;
+    padding: 10px;
+    animation: slideright 2s  ease forwards;
+    font-size: 14px;
+    
+    
+  }
+  .card1>div>i{
+    font-size: 30px;
+  }
+  .card2>div>i{
+    font-size: 30px;
+  }
+  .card3>div>i{
+    font-size: 30px;
+  }
+  .card2{
+    height: 200px;
+    width: 150px;
+    border: solid 3px orange;
+    border-radius: 20px 20px;
+    margin-left: 50px;
+    padding: 10px;
+    animation: slideright 2s  ease forwards;
+    font-size: 14px;
+
+    
+  }
+  .card3{
+    height: 200px;
+    width: 150px;
+    border: solid 3px orange;
+    border-radius: 20px 20px;
+    margin-left: 30px;
+    padding: 10px;
+    animation: slideright 2s  ease forwards;
+    font-size: 14px;
+    
+    
+  }
+  .swiper1{
+    display: block;
+    max-width: 400px;
+    margin: auto;
+    padding: 10px;
+  }
+  .slide1{
+    display: none;
+  }
+
+  
   
   
   
@@ -443,7 +624,5 @@ color: orange;
   }
   
 }
-
-
 
 

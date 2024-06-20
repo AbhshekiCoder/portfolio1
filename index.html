@@ -13,6 +13,22 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet"> 
     <title>Vite + React</title>
   </head>
+  <style>
+   @media print{
+        html,
+        body{
+            display: none;
+            overflow-x: hidden;
+           
+        }
+
+     }
+     html{
+        user-select: none;
+        overflow-x: hidden;
+        
+     }
+  </style>
   <body>
     <div id="root" style = "height: full;"></div>
     <script type="module" src="/src/main.jsx"></script>

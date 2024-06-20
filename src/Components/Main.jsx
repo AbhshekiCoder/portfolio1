@@ -1,4 +1,9 @@
-import bg1 from '../images/bg1.png'
+import bg1 from '../images/bg1.png';
+import {Swiper, SwiperSlide} from  'swiper/react';
+import 'swiper/css';
+import 'swiper/swiper-bundle.css';
+import 'swiper/css/pagination';
+import {Navigation, Pagination, Scrollbar} from 'swiper/modules';
 function Main({profile1}){
     
     return(
@@ -97,12 +102,15 @@ function Main({profile1}){
 
       </div>
         </div>
+        <div className = "bg">
 
-        <div className='services  row' style={{backgroundColor: profile1 == 'white'?'white':'black', color: profile1 == 'white'?'black':'white'}}>
-        <div className = "col-md">
+</div>
+
+        <div className='services z-10 row' style={{backgroundColor: profile1 == 'white'?'white':'black', color: profile1 == 'white'?'black':'white'}}>
+        <div className = "col-md z-10">
         <h1>My Awesome </h1>
         <p>Services</p>
-        <p1>we provided related to web development, Backend, Fullstack, UI/UX design, editing,
+        <p1 >we provided related to web development, Backend, Fullstack, UI/UX design, editing,
         seo</p1>
         <div>
         <button className='rounded-sm bg-orange-400 text-white w-40'>Download CV</button>
@@ -111,14 +119,98 @@ function Main({profile1}){
        
 
         </div>
-        <div className = "col-md">
-            
+        <div className = "col-md card" style={{backgroundColor: profile1 == 'white'?'white':'black', color: profile1 == 'white'?'black':'white'}}>
+        <div className='card3 absolute' >
+        <div className=' flex justify-center'>
+        <i class="fa-solid fa-face-laugh-wink text-yellow-400"></i>
         </div>
-        
+        <div className='flex justify-center mt-3 '>Content Creator</div>
+        <div className='flex justify-center mt-3  text-gray-400 w-full  pl-5'>Web Design, Web devlopment, Seo </div>
+       <a href = "#" className=' flex justify-center text-blue-300'>Learn More</a>
+
+
+
         </div>
 
-       
+        <div className='card1 ' >
+        <div className=' flex justify-center'>
+        <i class="fa-solid fa-face-grin-wink text-yellow-400"></i>
         </div>
+        <div className='flex justify-center mt-3 '>UI UX Design</div>
+        <div className='flex justify-center mt-3  text-gray-400 w-full  pl-5 max-md:text-sm max-md:mt-2'>figma, photoshope Adobe, Adobe xd </div>
+       <a href = "#" className=' flex justify-center text-blue-300  max-md:text-sm max-md:mt-'>Learn More</a>
+
+
+        </div>
+        <div className='card2' >
+        <div className=' flex justify-center'>
+        <i class="fa-solid fa-face-laugh-wink text-yellow-400"></i>
+        </div>
+        <div className='flex justify-center mt-3 '>Web Developer</div>
+        <div className='flex justify-center mt-3  text-gray-400 w-full  pl-5   max-md:mt-2'>Web Design, Web devlopment, Seo </div>
+       <a href = "#" className=' flex justify-center text-blue-300  max-md:text-sm max-md:mt-'>Learn More</a>
+
+
+
+        </div>
+
+        </div>
+       
+            
+        </div>
+
+        <div className='projects'>
+        <h1>My Projects</h1>
+        <div className=' max-md:hidden slide1'>
+        <Swiper className='swiper max-md:hidden' pagination = {{clickable: true}} modules={[Pagination,Navigation]} slidesPerView={3} spaceBetween={30} >
+            <SwiperSlide className='swiper-slide'><img src = {bg1} className=''/></SwiperSlide>
+            <SwiperSlide className='swiper-slide '><img src = {bg1} className=''/></SwiperSlide>
+            <SwiperSlide className='swiper-slide'><img src = {bg1} className=''/></SwiperSlide>
+            <SwiperSlide className='swiper-slide '><img src = {bg1} className=''/></SwiperSlide>
+            <SwiperSlide className='swiper-slide'><img src = {bg1} className=''/></SwiperSlide>
+            <SwiperSlide className='swiper-slide '><img src = {bg1} className=''/></SwiperSlide>
+            <SwiperSlide className='swiper-slide'><img src = {bg1} className=''/></SwiperSlide>
+            <SwiperSlide className='swiper-slide '><img src = {bg1} className=''/></SwiperSlide>
+            
+        </Swiper>
+
+        </div>
+      
+
+       
+       
+        <div className='hidden swiper1'>
+        <Swiper className='swiper ' pagination = {{clickable: true}} modules={[Pagination,Navigation]} slidesPerView={1} spaceBetween={30} >
+            <SwiperSlide className='swiper-slide'><img src = {bg1} className=''/></SwiperSlide>
+            <SwiperSlide className='swiper-slide '><img src = {bg1} className=''/></SwiperSlide>
+            <SwiperSlide className='swiper-slide'><img src = {bg1} className=''/></SwiperSlide>
+            <SwiperSlide className='swiper-slide '><img src = {bg1} className=''/></SwiperSlide>
+            <SwiperSlide className='swiper-slide'><img src = {bg1} className=''/></SwiperSlide>
+            <SwiperSlide className='swiper-slide '><img src = {bg1} className=''/></SwiperSlide>
+            <SwiperSlide className='swiper-slide'><img src = {bg1} className=''/></SwiperSlide>
+            <SwiperSlide className='swiper-slide '><img src = {bg1} className=''/></SwiperSlide>
+            
+        </Swiper>
+
+        </div>
+      
+        <div>
+        <button className='border'>More </button>
+
+        </div>
+      
+
+        </div>
+      
+      
+        <div className='mt-5'>
+            jkjk
+        </div>
+        </div>
+
+
+       
+       
 
     
      
