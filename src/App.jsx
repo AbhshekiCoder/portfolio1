@@ -4,7 +4,7 @@ import Main from './Components/Main'
 import './App.css'
 import {Route, Router, Routes} from 'react-router-dom';
 import About from './Components/About';
-import Project from './Components/Project;
+import Project from './Components/Project';
 
 function App() {
   const [toggle, setToggle] = useState("white");
