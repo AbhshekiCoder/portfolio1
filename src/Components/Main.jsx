@@ -4,6 +4,10 @@ import 'swiper/css';
 import 'swiper/swiper-bundle.css';
 import 'swiper/css/pagination';
 import {Navigation, Pagination, Scrollbar} from 'swiper/modules';
+import {Link} from 'react-router-dom';
+import p1 from '../images/p1 (1).png';
+import foody from '../images/p3 (1).png';
+import cocoons from '../images/p2 (6).png';
 function Main({profile1}){
     console.log(profile1);
     
@@ -181,10 +185,10 @@ function Main({profile1}){
        
        
         <div className='hidden swiper1'>
-        <Swiper className='swiper2 hidden max-md:block ' pagination = {{clickable: true}} modules={[Pagination,Navigation]} slidesPerView={1} spaceBetween={30} >
-            <SwiperSlide className='swiper-slide'><img src = {bg1} className=''/></SwiperSlide>
-            <SwiperSlide className='swiper-slide '><img src = {bg1} className=''/></SwiperSlide>
-            <SwiperSlide className='swiper-slide'><img src = {bg1} className=''/></SwiperSlide>
+      <Swiper className='swiper2 hidden max-md:block ' pagination = {{clickable: true}} modules={[Pagination,Navigation]} slidesPerView={1} spaceBetween={30} >
+        <SwiperSlide className='swiper-slide'><img src = {p1} className=''/></SwiperSlide>
+            <SwiperSlide className='swiper-slide '><img src = {cocoons} className=''/></SwiperSlide>
+            <SwiperSlide className='swiper-slide'><img src = {foody} className=''/></SwiperSlide>
             <SwiperSlide className='swiper-slide '><img src = {bg1} className=''/></SwiperSlide>
             <SwiperSlide className='swiper-slide'><img src = {bg1} className=''/></SwiperSlide>
             <SwiperSlide className='swiper-slide '><img src = {bg1} className=''/></SwiperSlide>
@@ -196,7 +200,7 @@ function Main({profile1}){
         </div>
       
         <div>
-        <button className='border'>More </button>
+        <button className='border'><Link to = "/Project">More</Link> </button>
 
         </div>
       
