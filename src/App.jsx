@@ -4,6 +4,7 @@ import Main from './Components/Main'
 import './App.css'
 import {Route, Router, Routes} from 'react-router-dom';
 import About from './Components/About';
+import Project from './Components/Project;
 
 function App() {
   const [toggle, setToggle] = useState("white");
@@ -43,6 +44,7 @@ function App() {
     <Routes>
       <Route path ='/' element = {<Main profile1 = {toggle}/>}></Route>
       <Route path ='/About' element = {<About profile1={toggle}/>} ></Route>
+     <Route path ='/Project' element = {<Project profile1={toggle}/>} ></Route>
     </Routes>
 
    
