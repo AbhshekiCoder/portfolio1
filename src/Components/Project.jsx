@@ -67,7 +67,7 @@ function Project({profile1}){
         <div className="project1 mt-3" data-aos = "fade-right">
         <h1>Foody</h1>
         <Swiper className='slide' pagination = {{clickable: true}} modules={[Pagination,Navigation]} slidesPerView={1} spaceBetween={30} >
-            <SwiperSlide className='swiper-slide1'><video src = 'blob:http://localhost:5173/daf180af-2a82-4628-9f78-a6781601d4d6' controls autoPlay></video></SwiperSlide>
+            <SwiperSlide className='swiper-slide1'><video src = 'blob:http://localhost:5173/6f8d317a-cf04-4e3f-8275-9c8fc660a1bf' controls autoPlay></video></SwiperSlide>
             <SwiperSlide className='swiper-slide1 '><img src = {p1} className=''/></SwiperSlide>
             <SwiperSlide className='swiper-slide1'><img src = {p2} className=''/></SwiperSlide>
             <SwiperSlide className='swiper-slide1 '><img src = {p3} className=''/></SwiperSlide>
