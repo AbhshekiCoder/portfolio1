@@ -37,6 +37,7 @@ import p30 from '../images/p3 (8).png';
 import p31 from '../images/p3 (9).png';
 import p32 from '../images/p3 (10).png';
 import p33 from '../images/p3 (11).png';
+import foody from '../images/foody.mp4';
 
 
 
@@ -67,7 +68,7 @@ function Project({profile1}){
         <div className="project1 mt-3" data-aos = "fade-right">
         <h1>Foody</h1>
         <Swiper className='slide' pagination = {{clickable: true}} modules={[Pagination,Navigation]} slidesPerView={1} spaceBetween={30} >
-            <SwiperSlide className='swiper-slide1'><video src = 'blob:http://localhost:5173/6f8d317a-cf04-4e3f-8275-9c8fc660a1bf' controls autoPlay></video></SwiperSlide>
+            <SwiperSlide className='swiper-slide1'><video src = {foody} controls autoPlay></video></SwiperSlide>
             <SwiperSlide className='swiper-slide1 '><img src = {p1} className=''/></SwiperSlide>
             <SwiperSlide className='swiper-slide1'><img src = {p2} className=''/></SwiperSlide>
             <SwiperSlide className='swiper-slide1 '><img src = {p3} className=''/></SwiperSlide>
