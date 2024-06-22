@@ -523,6 +523,131 @@ color: orange;
   display: flex;
   justify-content: center;
   }
+.project{
+  width: 100%;
+  height: fit-content;
+}
+.project>div{
+  max-width: 800px;
+  margin: auto;
+  margin-top: 100px;
+}
+.project>div>h1{
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  color: #fdc50f;
+  font-weight: bold;
+
+}
+.project1>h1{
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  color: #fdc50f;
+  font-weight: bold;
+
+}
+.slide{
+  max-width: 800px;
+ 
+  height: 420px;
+  padding-bottom: 10px;
+  border-radius: 20px 20px;
+  
+}
+.swiper-slide1{
+  max-width: 800px;
+  height: 400px;
+  border: solid 2px orange;
+  border-radius: 20px 20px;
+  box-shadow: 0px 0px 10px orange;
+}
+.swiper-slide1>img{
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide1>video{
+  width: 100%;
+  height: 100%;
+
+}
+.description{
+  margin-top: 20px;
+  display: grid;
+  justify-content: end;
+  
+ 
+
+  
+  
+
+}
+.description1{
+ 
+  border: solid 2px orange;
+  border-radius: 20px 20px ;
+  padding: 10px;
+  color: grey;
+  max-width: 400px;
+  max-height: 200px;
+  overflow-y: auto;
+  margin-left: 50px;
+  box-shadow: 0px 0px 10px orange;
+ 
+
+  
+}
+.description2{
+ 
+  border: solid 2px orange;
+  border-radius: 20px 20px ;
+  padding: 10px;
+  color: grey;
+  max-width: 400px;
+  max-height: 200px;
+  overflow-y: auto;
+  margin-top: 50px;
+  box-shadow: 0px 0px 10px orange;
+ 
+  
+ 
+  
+  
+
+}
+.description3{
+ 
+  border: solid 2px orange;
+  border-radius: 20px 20px ;
+  padding: 10px;
+  color: grey;
+  max-width: 400px;
+ 
+  max-height: 200px;
+  overflow-y: auto;
+  margin-top: 30px;
+  box-shadow: 0px 0px 10px orange;
+
+  
+  
+  
+ 
+ 
+}
+.projectmenu{
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background-color: green;
+  color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 90%;
+  margin-top: 40%;
+  z-index: 999;
+}
 
 @media(max-width: 768px){
   .skills{
@@ -642,6 +767,36 @@ color: orange;
   .slide1{
     display: none;
   }
+  .swiper1{
+    display: block;
+    max-width: 400px;
+    margin: auto;
+    padding: 10px;
+  }
+  .slide1{
+    display: none;
+  }
+  .slide{
+    height: 320px;
+   
+  }
+  .swiper-slide1{
+    max-width: 800px;
+    height: 300px;
+  }
+  .swiper-slide1>img{
+    width: 100%;
+    height: 100%;
+  }
+  .description2{
+    margin-top: 30px;   
+  }
+  .description1{
+    margin-top: 250px;
+    margin-left: 0;
+  }
+  
+
 
   
   
@@ -658,6 +813,9 @@ color: orange;
     transform: rotate(360deg);
   }
   
+}
+::-webkit-scrollbar{
+  display: none;
 }
 
 
